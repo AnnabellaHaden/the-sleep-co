@@ -1,33 +1,114 @@
+/*---Colors used-
+Yellow: #FFBE00
+Navy: #192B37
+-*/ 
+
 /*---CSS Reset--*/ 
 * { 
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 /*---Tempory Styles for structual html--*/ 
-
-* { 
-    padding:0.5rem;
-    border:2px solid rgb(146, 143, 143);
+section { 
+    border: 2px solid rgb(146, 143, 143);
 }
 
-body { border: none; } 
-html { border: none; }
+body { 
+    font-family: 'Catamaran', sans-serif;
+    color: #192b37
+} 
 
-/*---Image Styles--*/ 
+/*---Universal styles & Utility Classes--*/ /*--- These are also "classes"--*/ 
+
+/*--- Padding = Body Fat--*/ 
+.padded      { padding:5%;   }
+.padded-sm   { padding:1rem; }
+
+/*--- Background Color Dark--*/ 
+.bg-dark { 
+    background-color: #192b37;
+    color: white;
+}
+
+/*---Image Styles Universal--*/ 
 .bg-image {
-    background-image:url('/images/the-sleep-co-original1.jpg') ;
+    background-image: url('/images/the-sleep-co-original1.jpg') ;
     background-size: cover;
     min-height: 10rem;
 }
 
-/*---Universal styles & Utility Classes--*/ 
 
-.padded      { padding:5%;   }
-.padded-sm   { padding:1rem; }
 
-.bg-dark     { 
-    background-color: #192b37;
-    color: white;
+/*---Section Heights (how tall they are on screen)--*/ 
+.tall-50  { min-height: 50vh;}
+.tall-60  { min-height: 60vh;}
+.tall-70  { min-height: 70vh;}
+.tall-80  { min-height: 80vh;}
+.tall-90  { min-height: 90vh;}
+.tall-100 { min-height: 100vh;}
+
+
+/*---Typography Styles--*/ 
+/*--- Text Color Featured (another color)--*/ 
+.featured-text { color: #FFBE00; }
+
+/*--- Font Weights(thickness)--*/ 
+.font-weight-light  { font-weight: 200; }
+.font-weight-normal { font-weight: 400; }
+.font-weight-bold   { font-weight: 500; }
+.font-weight-bolder { font-weight: 800; }
+
+/*--- Text Positioning--*/ 
+.text-left     { text-align:left;   }
+.text-center   { text-align:center; }
+.text-right    { text-align:right;  }
+ 
+
+/*---Header Styling--*/ 
+
+header { 
+    background-image: url('images/the-sleep-co-original1.jpg') ;
+    background-size: cover;
+    background-position: center;
 }
+
+h2 { 
+    font-size: 2.3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+header h3 {
+    font-size: 5.5rem;
+    line-height: 1;
+}
+
+/*---Paragraph Styling--*/ 
+
+p { 
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/*---This is removing the margin of the bottom paragraph (weird extra space at the bottom of the container)--*/ 
+p:last-child {
+    margin-bottom: 0;
+} 
+
+/*---Background Images --*/ 
+
+.bg-bed { 
+    background-image: url('/images/the-sleep-co-original3.jpg');
+}
+
+.bg-pug { 
+    background-image: url('/images/the-sleep-co-original4.jpg');
+    background-position:50% 35%;
+}  
+
+.bg-yellow { 
+    background-image: url('/images/the-sleep-co-original2.jpg')
+} 
