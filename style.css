@@ -34,6 +34,18 @@ body {
     color: white;
 }
 
+/*--- Background Color White --*/ 
+.bg-white { 
+    background-color: white;
+    color: #192b37;
+}
+
+/*--- Background Color Yellow--*/ 
+.bg-yellow-feature { 
+    background-color:#FFBE00 ;
+    color: white;
+} 
+
 /*---Image Styles Universal--*/ 
 .bg-image {
     background-image: url('/images/the-sleep-co-original1.jpg') ;
@@ -87,9 +99,13 @@ body {
 .text-right    { text-align:right;  }
  
 /*---Header & Footer Styling--*/ 
-
+     
+a nav {
+    display: inline-block;
+    padding: 0.3rem 0;
+}    
+    
 header { 
-    background-image: url('images/the-sleep-co-original1.jpg') ;
     background-size: cover;
     background-position: center;
 }
@@ -104,6 +120,18 @@ h3 {
     font-size: 5.5rem;
     line-height: 1;
 } 
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+} 
+
+h5 {
+    font-size:  2.3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 
 footer a {
     border:none;
@@ -134,6 +162,10 @@ p:last-child {
 
 /*---Background Images --*/ 
 
+.bg-header { 
+    background-image: url('images/the-sleep-co-original1.jpg')
+}
+
 .bg-bed { 
     background-image: url('/images/the-sleep-co-original3.jpg');
 }
@@ -148,6 +180,42 @@ p:last-child {
     background-position: 50% 57%;
 } 
 
+.bg-grey { 
+    background-image: url('images/grey-background-image.png');
+}
+
+
+/*---Cards --*/ 
+.card {
+    padding: 0;
+    border: 0.5rem solid #FFBE00;
+    border-radius:5px;
+}
+
+/*-----Form---*/
+
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+textarea {
+    min-height: 4rem;
+  }
+
+form button {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 0.1em;
+    margin: 0.5rem 0;
+    font-family: inherit;
+  }
+
+
 /*---Icon Grid "fa" stands for fontawesome the word below is the same class name as the icons have --*/ 
 .fa-solid {
     display: block;
@@ -155,4 +223,3 @@ p:last-child {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
-
