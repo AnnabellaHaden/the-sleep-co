@@ -100,11 +100,6 @@ body {
  
 /*---Header & Footer Styling--*/ 
      
-a nav {
-    display: inline-block;
-    padding: 0.3rem 0;
-}    
-    
 header { 
     background-size: cover;
     background-position: center;
@@ -148,7 +143,7 @@ p {
 a { 
     color:inherit;
     text-decoration: none;
-    border-bottom: 1px solid;
+    padding: 0.5rem;
 }
 
 a:hover {
@@ -191,6 +186,16 @@ p:last-child {
     border: 0.5rem solid #FFBE00;
     border-radius:5px;
 }
+
+/*---Icons for Quotes --*/ 
+.quote-icon {
+    text-align:center; 
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120,120,120);
+    line-height: 1;
+}
+
 
 /*-----Form---*/
 
