@@ -261,8 +261,11 @@ form button {
 
 @media (max-width: 48em) {
 
+
   html { font-size: 14px; }
   p    { font-size: 1.1rem;}
+
+  .flex-flip-sm { flex-direction: column-reverse; }
 
   .show-sm { display: block; }
   .hide-sm { display: none;  }
