@@ -230,11 +230,6 @@ form button {
 
 
 
-
-
-
-
-
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 /* When playing with the sizing it is helpufl to set borders of 2px solis and diffrent colors to the body!*/ 
 
@@ -308,6 +303,23 @@ form button {
     }
 
   .xs-tall-25 { min-height: 25vh;}
+
+  .horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 7%;
+  }
+  
+ .card img {
+    margin-top: -25%;
+  }
+ 
+   .mob-padded-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* ------- XXS Media Query (25em / 400px) --------------- */ 
@@ -323,6 +335,8 @@ form button {
         max-width:100%;
     }
       
-
 }
+
+
+    
   
